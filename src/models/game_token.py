@@ -1,4 +1,4 @@
-class Token:
+class GameToken:
 
     def __init__(self,
                  _x: int,
