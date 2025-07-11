@@ -25,10 +25,11 @@ class Player:
 
             return None
 
-        # Push token into random column
-
+    # Push token into random column
     def random_move(self, board: Board) -> None:
-
+        # Get all viable moves
         viable_moves = board.get_all_viable_cols()
+
+        # Chose random col and insert token
         random_move_col = random.choice(viable_moves)
         self.move(board, random_move_col)
